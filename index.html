@@ -2,142 +2,143 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Matech Systems | Soluções Tecnológicas</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0f172a;
-            color: #f1f5f9;
-        }
-
-        header {
-            padding: 20px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header h1 {
-            color: #38bdf8;
-        }
-
-        nav a {
-            color: #f1f5f9;
-            text-decoration: none;
-            margin-left: 20px;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        .hero h2 {
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            max-width: 600px;
-            margin: 0 auto 30px;
-            color: #cbd5e1;
-        }
-
-        .btn {
-            padding: 12px 24px;
-            background-color: #38bdf8;
-            border: none;
-            color: #0f172a;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 6px;
-        }
-
-        section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .card {
-            background-color: #1e293b;
-            padding: 30px;
-            width: 280px;
-            border-radius: 8px;
-        }
-
-        footer {
-            padding: 40px;
-            text-align: center;
-            background-color: #020617;
-            color: #94a3b8;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-    <header>
-        <h1>Matech Systems</h1>
-        <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#contato">Contato</a>
-        </nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#">
+                <!-- <img src="assets/logo.svg" alt="Matech Systems" class="brand-logo"> -->
+                <span class="brand-text">Matech<span class="accent">!</span></span>
+            </a>
+            <nav class="nav">
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#contato" class="cta">Contato</a>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero">
-        <h2>Tecnologia sob medida para o seu negócio</h2>
-        <p>
-            Desenvolvemos soluções digitais modernas, escaláveis e eficientes
-            para transformar ideias em produtos reais.
-        </p>
-        <button class="btn">Fale conosco</button>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1>Construímos software que impulsiona crescimento.</h1>
+                    <p class="lead">Soluções sob medida, escaláveis e fáceis de manter — para startups e empresas maduras.</p>
+                    <div class="actions">
+                        <a href="#contato" class="btn primary">Fale com a gente</a>
+                        <a href="#servicos" class="btn ghost">Nossos serviços</a>
+                    </div>
+                </div>
+                <div class="hero-art">
+                    <div class="mockup">
+                        <svg viewBox="0 0 600 400" aria-hidden="true" focusable="false">
+                            <rect x="0" y="0" width="600" height="400" rx="12" fill="#0b1320" />
+                            <g fill="#0ea5a4" opacity="0.85">
+                                <circle cx="120" cy="100" r="10" />
+                                <rect x="160" y="80" width="300" height="12" rx="6" />
+                                <rect x="160" y="110" width="240" height="12" rx="6" />
+                                <rect x="160" y="140" width="200" height="12" rx="6" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="sobre">
-        <h2>Sobre a Matech Systems</h2>
-        <p>
-            Somos uma empresa focada em desenvolvimento de software, automação
-            e soluções tecnológicas personalizadas.
-        </p>
-    </section>
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2>Quem somos</h2>
+                <p class="muted">Equipe de engenheiros, designers e estrategistas criando produtos digitais com impacto real.</p>
+            </div>
+        </section>
 
-    <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <div class="services">
-            <div class="card">
-                <h3>Desenvolvimento Web</h3>
-                <p>Aplicações modernas, rápidas e escaláveis.</p>
+        <section id="equipe" class="section">
+            <div class="container">
+                <h2>Equipe</h2>
+                <p class="muted">Conheça as pessoas por trás da Matech Systems.</p>
+                <div class="grid team-grid">
+                    <article class="profile">
+                        <img class="avatar" src="https://github.com/guilhermemvo.png" alt="Guilherme Matias">
+                        <h3>Guilherme Matias</h3>
+                        <p class="role">Engenheiro de Software Full‑stack Sênior</p>
+                        <div class="social-links">
+                            <a href="https://github.com/guilhermemvo" target="_blank" rel="noopener">GitHub</a>
+                            <a href="https://www.linkedin.com/in/guilhermemvo/" target="_blank" rel="noopener">LinkedIn</a>
+                        </div>
+                    </article>
+
+                    <article class="profile">
+                        <img class="avatar" src="https://github.com/washington-massa.png" alt="Washington Massa">
+                        <h3>Washington Massa</h3>
+                        <p class="role">Engenheiro de Software Full‑stack Pleno</p>
+                        <div class="social-links">
+                            <a href="https://github.com/washington-massa" target="_blank" rel="noopener">GitHub</a>
+                            <a href="https://www.linkedin.com/in/washington-massa-147994154/" target="_blank" rel="noopener">LinkedIn</a>
+                        </div>
+                    </article>
+
+                    <article class="profile">
+                        <img class="avatar" src="https://github.com/kaErnest.png" alt="Karoline Ernest">
+                        <h3>Karoline Ernest</h3>
+                        <p class="role">Engenheira de Software Full‑stack Junior</p>
+                        <div class="social-links">
+                            <a href="https://github.com/kaErnest" target="_blank" rel="noopener">GitHub</a>
+                            <a href="https://www.linkedin.com/in/karoline-ernest/" target="_blank" rel="noopener">LinkedIn</a>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="card">
-                <h3>Automação</h3>
-                <p>Processos inteligentes para reduzir custos.</p>
+        </section>
+
+        <section id="servicos" class="section bg-alt">
+            <div class="container">
+                <h2>Nossos serviços</h2>
+                <div class="grid services">
+                    <article class="card">
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Aplicações rápidas, acessíveis e fáceis de escalar.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Automação e Integrações</h3>
+                        <p>Automatizamos fluxos e conectamos sistemas críticos.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Consultoria Técnica</h3>
+                        <p>Arquitetura, revisão de código e práticas para crescimento seguro.</p>
+                    </article>
+                </div>
             </div>
-            <div class="card">
-                <h3>Consultoria Tech</h3>
-                <p>Estratégia e arquitetura para crescimento sustentável.</p>
+        </section>
+
+        <section id="contato" class="section">
+            <div class="container contact">
+                <div>
+                    <h2>Vamos conversar</h2>
+                    <p class="muted">Envie um e-mail para <a href="mailto:contato@matechsystems.com.br">contato@matechsystems.com.br</a> ou use o link abaixo.</p>
+                </div>
+                <div>
+                    <a href="mailto:contato@matechsystems.com.br" class="btn primary large">Enviar email</a>
+                </div>
             </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Matech Systems. Todos os direitos reservados.</p>
+            <nav class="footer-nav">
+                <a href="#">Política de privacidade</a>
+                <a href="#">Termos</a>
+            </nav>
         </div>
-    </section>
-
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Email: contato@matechsystems.com.br</p>
-    </section>
-
-    <footer>
-        © 2026 Matech Systems. Todos os direitos reservados.
     </footer>
 
 </body>
